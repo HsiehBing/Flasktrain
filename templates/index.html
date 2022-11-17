@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<title> Home Page</title>
+
+<body>
+<div>Hello {{guests}} </div>
+welcom to Bing's Blog
+
+<h2>This is the home page</h2>
+<a href="/signup", method="POST">Signup</a>
+<br/>
+<a href="/signin", method="POST">SignIn</a>
+<br/>
+<a href="/logout">Logout</a>
+<br/>
+<a href="/member">Post article</a>
+<hr/>
+<h2>Here is for the article</h2>
+<hr>
+{%for article in a_a%}
+	<div>Title:{{article["title"]}}</div> 
+	<div>Content:{{article["content"]}}</div>
+	<br/>
+{%endfor%}
+
+</body>
+
+</html>

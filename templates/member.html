@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Member page </title>
+
+<body>
+<h3>{{nic}} Welcome back</h3>
+
+<h3>Post an article here</h3>
+<div>
+<form action="/post" method="GET">
+	<p><label for ="title">Title</label></p>
+	 <input id="content", type="text" name="title", style="font-size:20px"/>
+	<p><label for ="content">type in content</label></p>
+	<textarea id="content", name="content",row="4",cols="50", style="font-size:20px"></textarea>
+	<br>
+	<input type="submit" value="Submit">
+</form>
+</div>
+
+<br/>
+
+<div><a href="/">Back To Home Page</a></div>
+<div><a href="/admin">Go to control panel</a></div>
+</body>
+</html>

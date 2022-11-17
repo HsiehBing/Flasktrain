@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Admin control panel </title>
+
+<body>
+<h2>Users</h2>
+
+<table border="1" width="400" cellpadding="5">
+
+
+<tr>
+	<td>Nickname</td>
+	<td>E-mail</td>
+	<td>passwork</td>
+</tr>
+{%for data in users%}
+	<tr>
+		<td>{{data["nickname"]}}</td>
+		<td>{{data['email']}}  	</td>
+		<td>{{data['password']}} </td>
+	</tr>
+{%endfor%}
+</table>
+</body>
+
+</html>
